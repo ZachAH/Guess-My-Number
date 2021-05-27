@@ -47,6 +47,7 @@ document.querySelector('.check').addEventListener('click', function(){
             document.querySelector('.score').textContent =  score;
         } else {
               document.querySelector('.message').textContent = '🤯 You lost the game!';
+              document.querySelector('body').style.backgroundColor = '#FF0000';
         }
     //if players guess is to low
     } else if (guess < secretNumber) {
@@ -56,6 +57,7 @@ document.querySelector('.check').addEventListener('click', function(){
             document.querySelector('.score').textContent =  score;
          } else {
             document.querySelector('.message').textContent = '🤯 You lost the game!';
+            document.querySelector('body').style.backgroundColor = '#FF0000';
          }
         
     }
